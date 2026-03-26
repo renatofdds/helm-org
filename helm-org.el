@@ -43,8 +43,7 @@
 
 ;; Menu
 ;;;###autoload
-(progn
-  (require 'helm-easymenu)
+(with-eval-after-load 'helm-easymenu
   (easy-menu-add-item
    nil '("Tools" "Helm")
    '("Org"
